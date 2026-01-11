@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websprout Academy Hub | Free Coding Class</title>
+
+    <!-- 🚨 PART 3: SEO & SOCIAL MEDIA META TAGS (FOR LINK PREVIEWS) 🚨 -->
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Websprout Academy Hub | Free Coding Class">
+    <meta name="description" content="Join a free coding class for students and technologists. Learn HTML, CSS, and JavaScript in a vibrant, disciplined community. Secure your spot now!">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://YOUR_WEBSITE_URL.com/"> <!-- 👈 Replace with your actual domain later -->
+    <meta property="og:title" content="Websprout Academy Hub | Free Coding Class">
+    <meta property="og:description" content="Join a free coding class for students and technologists. Learn HTML, CSS, and JavaScript in a vibrant, disciplined community.">
+    <!-- 🖼️ ACTION REQUIRED: Replace this image URL with a link to your own logo or banner image (e.g., hosted on imgur.com or your own server) -->
+    <meta property="og:image" content="https://i.imgur.com/your-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://YOUR_WEBSITE_URL.com/"> <!-- 👈 Replace with your actual domain later -->
+    <meta property="twitter:title" content="Websprout Academy Hub | Free Coding Class">
+    <meta property="twitter:description" content="Join a free coding class for students and technologists. Learn HTML, CSS, and JavaScript in a vibrant, disciplined community.">
+    <!-- 🖼️ ACTION REQUIRED: Use the same image URL as above -->
+    <meta property="twitter:image" content="https://i.imgur.com/your-image.png">
+    
+    <!-- Tailwind CSS, Fonts, etc. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Poppins', 'sans-serif'] } } } };
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <!-- ========== HEADER / NAVBAR ========== -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-emerald-600">Websprout Academy</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-slate-600 hover:text-emerald-600">Home</a>
+                <a href="#about" class="text-slate-600 hover:text-emerald-600">About Us</a>
+                <a href="#paths" class="text-slate-600 hover:text-emerald-600">Our Paths</a>
+                <a href="#curriculum" class="text-slate-600 hover:text-emerald-600">What You'll Learn</a>
+                <a href="#join-form" class="bg-emerald-500 text-white px-5 py-2 rounded-full font-semibold hover:bg-emerald-600">Join Free Class</a>
+            </div>
+
+            <!-- 🔧 PART 1: MOBILE MENU BUTTON (HAMBURGER) 🔧 -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="focus:outline-none">
+                    <svg class="w-6 h-6 text-slate-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#home" class="block py-2 px-6 text-sm hover:bg-emerald-50">Home</a>
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-emerald-50">About Us</a>
+            <a href="#paths" class="block py-2 px-6 text-sm hover:bg-emerald-50">Our Paths</a>
+            <a href="#curriculum" class="block py-2 px-6 text-sm hover:bg-emerald-50">What You'll Learn</a>
+            <a href="#join-form" class="block py-4 px-6 text-sm bg-emerald-500 text-white text-center font-bold">Join Free Class</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== HERO SECTION ========== -->
+        <section id="home" class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+            <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+                <source src="700_F_513522277_2ySCxyCwxIxFqzNczfLXFf37DR6Z9awv_ST.mp4" type="video/mp4"> type="video/mp4">
+            </video>
+            <div class="absolute top-0 left-0 w-full h-full bg-black/60 z-10"></div>
+            <div class="relative z-20 container mx-auto px-6">
+                <!-- 🔧 PART 2: DYNAMIC TYPING EFFECT TARGET 🔧 -->
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                    Build Your Future with Code. <br>
+                    <span id="typing-text" class="text-emerald-400"></span>
+                </h1>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-200">Join our free coding class and innovate with a community driven by passion and disciplined by purpose.</p>
+                <a href="#join-form" class="mt-8 inline-block bg-emerald-500 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-emerald-600 transform hover:scale-105">Claim My Free Spot</a>
+            </div>
+        </section>
+
+        <!-- ALL OTHER SECTIONS REMAIN THE SAME -->
+        <section id="about" class="py-20 bg-white"><div class="container mx-auto px-6 text-center"><h2 class="text-3xl md:text-4xl font-bold">Inspired Minds, Disciplined Results.</h2><p class="mt-4 max-w-3xl mx-auto text-slate-600 text-lg">At Websprout Academy, we merge high-spirited creativity with a serious, disciplined approach. Our mission is to deliver inspired tech education that empowers you to exceed your goals with remarkable agility.</p></div></section>
+        <section id="paths" class="py-20 bg-slate-50"><div class="container mx-auto px-6"><div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold">Find Your Place in the Hub</h2><p class="mt-2 text-slate-500">Whether you're starting your journey or looking to lead the way.</p></div><div class="grid md:grid-cols-2 gap-10"><div class="bg-white border border-slate-200 rounded-xl p-8 text-center transform hover:-translate-y-2 transition-transform duration-300"><h3 class="text-2xl font-bold text-emerald-600">For Students</h3><p class="mt-4 text-slate-600">Launch your tech career. Learn in-demand skills in our free class, build a strong portfolio, and connect with mentors.</p><a href="#join-form" class="mt-6 inline-block text-emerald-600 font-semibold hover:underline">Start Learning →</a></div><div class="bg-white border border-slate-200 rounded-xl p-8 text-center transform hover:-translate-y-2 transition-transform duration-300"><h3 class="text-2xl font-bold text-emerald-600">For Technologists</h3><p class="mt-4 text-slate-600">Shape the next generation. Share your expertise, mentor emerging talent, and collaborate on innovative projects.</p><a href="#join-form" class="mt-6 inline-block text-emerald-600 font-semibold hover:underline">Start Innovating →</a></div></div></div></section>
+        <section id="curriculum" class="py-20 bg-white"><div class="container mx-auto px-6"><div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold">What You'll Learn in the Free Class</h2><p class="mt-2 text-slate-500">We focus on the fundamental building blocks of the modern web.</p></div><div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8"><div class="flex items-start space-x-4"><div class="flex-shrink-0 w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg></div><div><h3 class="text-xl font-semibold">HTML5 Foundations</h3><p class="mt-1 text-slate-500">Structure web pages correctly and semantically, forming the backbone of any website.</p></div></div><div class="flex items-start space-x-4"><div class="flex-shrink-0 w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg></div><div><h3 class="text-xl font-semibold">Styling with Tailwind CSS</h3><p class="mt-1 text-slate-500">Learn the modern, utility-first approach to build beautiful, responsive designs rapidly.</p></div></div><div class="flex items-start space-x-4"><div class="flex-shrink-0 w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path></svg></div><div><h3 class="text-xl font-semibold">JavaScript Fundamentals</h3><p class="mt-1 text-slate-500">Understand the core concepts of JavaScript to make your web pages interactive.</p></div></div><div class="flex items-start space-x-4"><div class="flex-shrink-0 w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div><div><h3 class="text-xl font-semibold">Build a Final Project</h3><p class="mt-1 text-slate-500">Apply everything you've learned by building a small, complete project from scratch.</p></div></div></div></div></section>
+        <section id="join-form" class="bg-emerald-600 py-20 text-white"><div class="container mx-auto px-6 text-center"><h2 class="text-3xl md:text-4xl font-bold">Secure Your Spot in the Free Class!</h2><p class="mt-2 max-w-xl mx-auto">Spaces are limited. Fill out the form now to get your instant invite to our exclusive WhatsApp community.</p><form id="signupForm" class="mt-8 max-w-lg mx-auto"><div class="flex flex-col md:flex-row gap-4"><input type="text" id="name" placeholder="Enter your name" required class="w-full px-4 py-3 rounded-md text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-300"><select id="role" required class="w-full px-4 py-3 rounded-md text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-300"><option value="" disabled selected>I am a...</option><option value="student">Student</option><option value="technologist">Technologist</option></select></div><button type="submit" class="w-full mt-4 bg-white text-emerald-600 px-8 py-3 rounded-full font-bold text-lg hover:bg-emerald-50 transform hover:scale-105">Get My Invite Link</button></form></div></section>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 py-6"><div class="container mx-auto px-6 text-center"><p>&copy; 2024 Websprout Academy Hub. All Rights Reserved.</p></div></footer>
+
+    <!-- ========== JAVASCRIPT LOGIC ========== -->
+    <script>
+        // --- MOBILE MENU TOGGLE ---
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- DYNAMIC TYPING EFFECT ---
+        const typingTextElement = document.getElementById('typing-text');
+        const words = [
+            "Join the Free Class.",
+            "Learn Real Skills.",
+            "Innovate Together.",
+            "Launch Your Career."
+        ];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentWord = words[wordIndex];
+            const typeSpeed = isDeleting ? 75 : 150;
+
+            typingTextElement.textContent = currentWord.substring(0, charIndex);
+
+            if (!isDeleting && charIndex < currentWord.length) {
+                charIndex++;
+            } else if (isDeleting && charIndex > 0) {
+                charIndex--;
+            } else {
+                isDeleting = !isDeleting;
+                if (!isDeleting) {
+                    wordIndex = (wordIndex + 1) % words.length;
+                }
+            }
+            setTimeout(type, isDeleting ? 75 : 150);
+        }
+        document.addEventListener('DOMContentLoaded', type);
+
+        // --- FORM SUBMISSION LOGIC ---
+        const signupForm = document.getElementById('signupForm');
+        signupForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            // 🚨 ACTION REQUIRED: Replace this link with your ACTUAL WhatsApp group invite link!
+            const whatsappInviteLink = "https://chat.whatsapp.com/YOUR_UNIQUE_INVITE_CODE";
+            window.location.href = whatsappInviteLink;
+        });
+    </script>
+</body>
+</html>
